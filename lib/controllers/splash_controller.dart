@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:login_app_flutter/screens/on_boarding_screen.dart';
+import 'package:login_app_flutter/screens/on_boarding/on_boarding_screen.dart';
 
 class SplashController extends GetxController {
   static SplashController get find => Get.find();
