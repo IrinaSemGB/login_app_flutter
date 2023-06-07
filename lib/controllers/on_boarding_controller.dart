@@ -7,6 +7,7 @@ import '../models/on_boarding_model.dart';
 import '../screens/on_boarding/on_boarding_widget.dart';
 
 class OnBoardingController extends GetxController {
+  //static OnBoardingController get find => Get.find();
 
   final LiquidController controller = LiquidController();
   RxInt currentPage = 0.obs;

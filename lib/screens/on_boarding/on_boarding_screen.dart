@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
+import 'package:get/get.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:login_app_flutter/constants/app_colors.dart';
 import 'package:login_app_flutter/controllers/on_boarding_controller.dart';

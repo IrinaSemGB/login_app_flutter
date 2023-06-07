@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app_flutter/constants/app_colors.dart';
 import '../../models/on_boarding_model.dart';
 
 class OnBoardingPage extends StatelessWidget {
@@ -20,11 +21,14 @@ class OnBoardingPage extends StatelessWidget {
           Image(image: AssetImage(onBoardingModel.image), height: size.height * 0.4),
           Column(
             children: [
-              Text(onBoardingModel.title, style: Theme.of(context).textTheme.headlineSmall),
-              Text(onBoardingModel.subTitle, textAlign: TextAlign.center),
+              Text(onBoardingModel.title,
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: AppColors.DARK)),
+              Text(onBoardingModel.subTitle,
+                  style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: AppColors.DARK),
+                  textAlign: TextAlign.center),
             ],
           ),
-          Text(onBoardingModel.counterText),
+          Text(onBoardingModel.counterText, style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: AppColors.DARK)),
           SizedBox(height: 20.0),
         ],
       ),

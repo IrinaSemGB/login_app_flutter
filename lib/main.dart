@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:login_app_flutter/screens/splash_screen.dart';
+import 'package:login_app_flutter/screens/splash/splash_screen.dart';
 import 'package:login_app_flutter/utils/theme/app_theme.dart';
 
 void main() => runApp(const LoginApp());

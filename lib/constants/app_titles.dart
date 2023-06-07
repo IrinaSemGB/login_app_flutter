@@ -3,6 +3,9 @@ import 'dart:core';
 const String kAppTitle = '.appable/';
 const String kAppTagLine = 'Learn to code. \nFree For Everyone';
 
+const String kLoginButtonTitle = 'Login';
+const String kSignupButtonTitle = 'Signup';
+
 const String kOnBoardingTitle1 = 'Build Awesome App';
 const String kOnBoardingTitle2 = 'Learn from Youtube';
 const String kOnBoardingTitle3 = 'Get code & Resources';
@@ -12,3 +15,6 @@ const String kOnBoardingSubtitle3 = 'Save time by just apply pasting complete ap
 const String kOnBoardingCounter1 = '1/3';
 const String kOnBoardingCounter2 = '2/3';
 const String kOnBoardingCounter3 = '3/3';
+
+const String kWelcomeTitle = 'Build Awesome App';
+const String kWelcomeSubtitle = 'Let\'s put your creativity on the development highway.';
