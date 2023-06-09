@@ -5,6 +5,7 @@ const String kAppTagLine = 'Learn to code. \nFree For Everyone';
 
 const String kLoginButtonTitle = 'Login';
 const String kSignupButtonTitle = 'Signup';
+const String kGoogleButtonTitle = 'Sign-In with Google';
 
 const String kOnBoardingTitle1 = 'Build Awesome App';
 const String kOnBoardingTitle2 = 'Learn from Youtube';
@@ -18,3 +19,11 @@ const String kOnBoardingCounter3 = '3/3';
 
 const String kWelcomeTitle = 'Build Awesome App';
 const String kWelcomeSubtitle = 'Let\'s put your creativity on the development highway.';
+
+const String kLoginTitle = 'Welcome Back, ';
+const String kLoginSubtitle = 'Make it work, make it right, make it fast.';
+const String kRememberMe = 'Remember Me?';
+const String kHaveAnAccount = 'Already have an Account?  ';
+const String kEmail = 'E-Mail';
+const String kPassword = 'Password';
+const String kForgotPassword = 'Forgot password?';

@@ -5,6 +5,7 @@ import 'package:login_app_flutter/constants/app_colors.dart';
 import 'package:login_app_flutter/constants/app_titles.dart';
 import 'package:login_app_flutter/constants/images_strings.dart';
 import 'package:login_app_flutter/models/fade_animation_position_model.dart';
+import 'package:login_app_flutter/screens/login/login_screen.dart';
 import '../controllers/fade_animation_controller.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -59,9 +60,7 @@ class WelcomeScreen extends StatelessWidget {
                     children: [
                       Expanded(
                         child: OutlinedButton(
-                          onPressed: () {
-                            // TODO realisation
-                          },
+                          onPressed: () => Get.to(LoginScreen()),
                           style: Theme.of(context).outlinedButtonTheme.style,
                           child: Text(kLoginButtonTitle.toUpperCase()),
                         ),

@@ -5,7 +5,7 @@ import 'package:login_app_flutter/constants/app_titles.dart';
 import 'package:login_app_flutter/constants/images_strings.dart';
 import 'package:login_app_flutter/controllers/fade_animation_controller.dart';
 import 'package:login_app_flutter/models/fade_animation_position_model.dart';
-import '../../common_widgets/fade_in_animation/fade_animation_widget.dart';
+import '../common_widgets/fade_in_animation/fade_animation_widget.dart';
 
 class SplashScreen extends StatelessWidget {
   SplashScreen({Key? key}) : super(key: key);
