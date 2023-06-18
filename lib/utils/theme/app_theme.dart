@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_app_flutter/utils/theme/widgets_theme/elevated_button_theme.dart';
+import 'package:login_app_flutter/utils/theme/widgets_theme/form_decoration_theme.dart';
 import 'package:login_app_flutter/utils/theme/widgets_theme/outlined_button_theme.dart';
 import 'package:login_app_flutter/utils/theme/widgets_theme/text_theme.dart';
 
@@ -11,6 +12,7 @@ class AppTheme {
     textTheme: AppTextTheme.lightTextTheme,
     outlinedButtonTheme: AppOutlinedButtonTheme.lightOutlinedButtonTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonTheme,
+    inputDecorationTheme: AppFormInputDecorationTheme.lightInputDecorationTheme,
   );
 
   static final ThemeData darkTheme = ThemeData(
@@ -18,5 +20,6 @@ class AppTheme {
     textTheme: AppTextTheme.darkTextTheme,
     outlinedButtonTheme: AppOutlinedButtonTheme.darkOutlinedButtonTheme,
     elevatedButtonTheme: AppElevatedButtonTheme.darkElevatedButtonTheme,
+    inputDecorationTheme: AppFormInputDecorationTheme.darkInputDecorationTheme,
   );
 }

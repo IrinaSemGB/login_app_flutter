@@ -1,23 +1,40 @@
 import 'package:flutter/material.dart';
-import '../../constants/app_titles.dart';
-import '../../constants/images_strings.dart';
 
-class LoginHeader extends StatelessWidget {
-  const LoginHeader({
-    super.key,
-    required this.size,
+class FormHeader extends StatelessWidget {
+
+  final String title, subTitle, image;
+  final Color? imageColor;
+  final double imageHeight;
+  final double? heightBetween;
+  final CrossAxisAlignment crossAxisAlignment;
+  final TextAlign? textAlign;
+
+  const FormHeader({super.key,
+    required this.title,
+    required this.subTitle,
+    required this.image,
+    this.imageColor,
+    this.imageHeight = 0.2,
+    this.heightBetween,
+    this.crossAxisAlignment = CrossAxisAlignment.start,
+    this.textAlign,
   });
-
-  final Size size;
 
   @override
   Widget build(BuildContext context) {
+
+    final Size size = MediaQuery.of(context).size;
+
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: crossAxisAlignment,
       children: [
-        Image(image: AssetImage(kWelcomeScreenImage), height: size.height * 0.2),
-        Text(kWelcomeTitle, style: Theme.of(context).textTheme.headlineMedium),
-        Text(kWelcomeSubtitle, style: Theme.of(context).textTheme.displaySmall),
+        Image(image: AssetImage(image),
+          color: imageColor,
+          height: size.height * imageHeight,
+        ),
+        SizedBox(height: heightBetween),
+        Text(title, style: Theme.of(context).textTheme.headlineMedium),
+        Text(subTitle, style: Theme.of(context).textTheme.displaySmall, textAlign: textAlign),
       ],
     );
   }

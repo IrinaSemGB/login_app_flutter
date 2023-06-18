@@ -4,8 +4,13 @@ import '../../constants/app_titles.dart';
 import '../../constants/images_strings.dart';
 
 class LoginFooter extends StatelessWidget {
+
+  final String textTitle, buttonTitle;
+
   const LoginFooter({
     super.key,
+    required this.textTitle,
+    required this.buttonTitle,
   });
 
   @override
@@ -13,7 +18,10 @@ class LoginFooter extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Text('OR'),
+        Padding(
+          padding: EdgeInsets.only(bottom: 10.0),
+          child: Text('OR', style: Theme.of(context).textTheme.displaySmall),
+        ),
         SizedBox(
           width: double.infinity,
           child: OutlinedButton.icon(
@@ -30,11 +38,11 @@ class LoginFooter extends StatelessWidget {
           },
           child: Text.rich(
             TextSpan(
-              text: kHaveAnAccount,
+              text: textTitle,
               style: Theme.of(context).textTheme.displaySmall,
               children: [
                 TextSpan(
-                  text: kSignupButtonTitle,
+                  text: buttonTitle,
                   style: TextStyle(color: AppColors.ACCENT),
                 ),
               ],
