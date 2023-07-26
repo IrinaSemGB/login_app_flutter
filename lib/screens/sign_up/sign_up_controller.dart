@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+import 'package:login_app_flutter/repository/authentication_repository.dart';
 
 class SignUpController extends GetxController {
   static SignUpController get instance => Get.find();
@@ -9,7 +10,7 @@ class SignUpController extends GetxController {
   final TextEditingController fullName = TextEditingController();
   final TextEditingController phone = TextEditingController();
 
-  void registerUser({required String email, required String password}) {
-
+  void registerUser(String email, String password) {
+    AuthenticationRepository.instance.createUserWithEmailAndPassword(email, password);
   }
 }

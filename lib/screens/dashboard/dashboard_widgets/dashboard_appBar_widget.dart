@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login_app_flutter/repository/authentication_repository.dart';
 import '../../../constants/app_colors.dart';
 import '../../../constants/app_titles.dart';
 import '../../../constants/images_strings.dart';
@@ -25,7 +26,7 @@ class DashboardAppBar extends StatelessWidget implements PreferredSizeWidget {
           child: IconButton(
             icon: Image(image: AssetImage(kUserProfileImage)),
             onPressed: () {
-              // TODO Realisation
+              AuthenticationRepository.instance.logout();
             },
           ),
         ),

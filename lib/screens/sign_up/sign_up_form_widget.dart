@@ -6,11 +6,12 @@ import '../../constants/app_titles.dart';
 class SignUpForm extends StatelessWidget {
   SignUpForm({super.key});
 
-  final _controller = Get.put(SignUpController());
-  final _formKey = GlobalKey<FormState>();
-
   @override
   Widget build(BuildContext context) {
+
+    final _controller = Get.put(SignUpController());
+    final _formKey = GlobalKey<FormState>();
+
     return Container(
       padding: EdgeInsets.symmetric(vertical: 20.0),
       child: Form(
@@ -29,7 +30,7 @@ class SignUpForm extends StatelessWidget {
             TextFormField(
               controller: _controller.email,
               decoration: InputDecoration(
-                prefixIcon: Icon(Icons.fingerprint),
+                prefixIcon: Icon(Icons.email_outlined),
                 labelText: kEmail,
               ),
             ),
@@ -56,8 +57,8 @@ class SignUpForm extends StatelessWidget {
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     SignUpController.instance.registerUser(
-                      email: _controller.email.text.trim(),
-                      password: _controller.password.text.trim(),
+                      _controller.email.text.trim(),
+                      _controller.password.text.trim(),
                     );
                   }
                 },
